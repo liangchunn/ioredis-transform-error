@@ -10,12 +10,16 @@
     "lint": "tslint --project ."
   },
   "devDependencies": {
+    "@types/ioredis": "^4.0.1",
+    "@types/sinon": "^5.0.3",
     "@types/jest": "^23.3.3",
     "@types/node": "^10.11.4",
     "tslint": "^5.11.0",
     "typescript": "^3.1.1"
   },
   "dependencies": {
+    "ioredis": "^4.0.0",
+    "ioredis-mock": "^4.0.0",
     "typescript-node-scripts": "^1.0.3"
   }
 }
