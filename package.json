@@ -1,0 +1,21 @@
+{
+  "name": "redis",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "test": "typescript-node-scripts test",
+    "start": "typescript-node-scripts start",
+    "build": "typescript-node-scripts build",
+    "lint": "tslint --project ."
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "@types/node": "^10.11.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "typescript-node-scripts": "^1.0.3"
+  }
+}
