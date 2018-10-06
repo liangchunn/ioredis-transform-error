@@ -1,4 +1,4 @@
-import * as ioredis from 'ioredis'
+import ioredis from './RedisClient'
 
 export class Redis {
     private instance: ioredis.Redis | null
@@ -19,5 +19,11 @@ export class Redis {
     }
     public async get(k: string) {
         return this.getInstance().then(instance => instance.get(k))
+    }
+    public async set(...args: string[]) {
+        return this.getInstance().then(instance => (instance.set as any)(...args))
+    }
+    public async del(k: string) {
+        return this.getInstance().then(instance => instance.del(k))
     }
 }
